@@ -34,7 +34,7 @@ gameManager.addBox(400,610,810,60, {isStatic:true});
 // var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
 // add all of the bodies to the world
-// World.add(engine.world, [ground]);
+// World.add(engine.world, [ground]); 
 
 
 let lastTime = 0;
