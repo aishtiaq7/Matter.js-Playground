@@ -26,7 +26,7 @@ export default class GameManager{
 
     addBox(x,y,w,h,...options){
         console.log(options);
-        var box = Bodies.rectangle(x, y, w, h, options);
+        var box = Bodies.rectangle(x, y, w, h, options[0]);
         World.add(this.engine.world, [box]);
 
     }

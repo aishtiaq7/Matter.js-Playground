@@ -26,15 +26,15 @@ var render = Render.create({
 var gameManager = new GameManager(engine,render);
 
 // create two boxes and a ground
-var circleA = Bodies.circle(300,0,20);
-gameManager.addBox(400,200,80,80);
-gameManager.addBox(450, 50,80,80);
-// gameManager.addBox(400,610,810,60, {isStatic:true});
+// var circleA = Bodies.circle(300,0,20);
+gameManager.addBox(400,200,80,80, {isStatic:false});
+gameManager.addBox(450, 50,80,80, {isStatic:false});
+gameManager.addBox(400,610,810,60, {isStatic:true});
 
-var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+// var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
 
 // add all of the bodies to the world
-World.add(engine.world, [ground]);
+// World.add(engine.world, [ground]);
 
 
 let lastTime = 0;
